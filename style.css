@@ -44,7 +44,7 @@ body {
     margin: 1vw;
     padding: 4vw;
     padding-left: 2vw;
-    
+    overflow: hidden;
     width: 93.2vw;
     
 }
@@ -175,7 +175,17 @@ body {
 
 
 .image-container {
-    width: 65vw;
+    display:block;
+    margin-top: -48vw;
+    float:left;
+    width: 64vw;
+    height: 85dvh;
     margin-left: 29vw;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        overflow-y: scroll;
+        max-height: 100vh;
+    }
+}
